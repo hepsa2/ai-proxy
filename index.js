@@ -1,7 +1,7 @@
 import express from 'express';
 import fetch from 'node-fetch';
 import cors from 'cors';
-
+app.use(cors()); // 允许所有域名访问
 const app = express();
 app.use(cors());
 app.use(express.json());

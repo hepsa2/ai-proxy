@@ -18,7 +18,7 @@ app.post('/ai', async (req, res) => {
         "Authorization": `Bearer ${OPENROUTER_KEY}`
       },
       body: JSON.stringify({
-        model: "openai/gpt-4-0613",
+        model: "arcee-ai/trinity-large-preview:free",
         messages: [{ role: "user", content: prompt }]
       })
     });

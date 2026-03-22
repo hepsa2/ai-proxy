@@ -68,7 +68,7 @@ document.getElementById("ai-send").onclick = async () => {
 };
 </script>
 ```
-2. Make sure the <textarea> for the prompt and a <pre> element for responses exist:
+2. Make sure the <textarea> for the prompt and a `<pre>` element for responses exist:
 `<textarea id="ai-prompt"></textarea>`
 `<button id="ai-send">Send</button>`
 `<pre id="ai-response"></pre>`

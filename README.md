@@ -68,10 +68,10 @@ document.getElementById("ai-send").onclick = async () => {
 };
 </script>
 ```
-2. Make sure the <textarea> for the prompt and a `<pre>` element for responses exist:
-`<textarea id="ai-prompt"></textarea>`
-`<button id="ai-send">Send</button>`
-`<pre id="ai-response"></pre>`
+2. Make sure the <textarea> for the prompt and a `<pre>` element for responses exist:<br>
+`<textarea id="ai-prompt"></textarea>`<br>
+`<button id="ai-send">Send</button>`<br>
+`<pre id="ai-response"></pre>`<br>
 ## Security Measures
 - Token-based authentication (SECRET_TOKEN)
 - CORS restricted to allowed frontend domains

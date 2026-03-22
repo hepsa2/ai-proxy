@@ -7,11 +7,12 @@ import path from 'path';
 const app = express();
 
 // =====================
-// ✅ CORS 限制（只允许你的站点）
+// ✅ CORS 限制（只允许部分的站点）
 app.use(cors({
   origin: [
     "https://hepsa2.github.io",
-    "https://liuxing.codeberg.page"
+    "https://liuxing.codeberg.page",
+    "https://fightedu.qzz.io"
   ]
 }));
 

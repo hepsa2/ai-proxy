@@ -111,13 +111,15 @@ app.post('/ai', async (req, res) => {
   }
 
   // 🌐 来源校验（防盗用）
-  const origin = req.headers.origin || "";
-  if (
-    !origin.includes("codeberg.page") &&
-    !origin.includes("github.io")
-  ) {
-    return res.status(403).json({ error: "Forbidden origin" });
-  }
+  // 🌐 来源校验（防盗用）
+const origin = req.headers.origin || "";
+if (
+  !origin.includes("codeberg.page") &&
+  !origin.includes("github.io") &&
+  !origin.includes("qzz.io")
+) {
+  return res.status(403).json({ error: "Forbidden origin" });
+}
 
   // 🌍 获取真实IP（更稳）
   const ip = (req.headers['x-forwarded-for'] || '').split(',')[0].trim()

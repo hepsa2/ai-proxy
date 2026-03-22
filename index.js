@@ -15,7 +15,7 @@ app.use(cors({
     "https://fightedu.qzz.io"
   ]
 }));
-
+app.options('*', cors());
 app.use(express.json());
 
 // =====================

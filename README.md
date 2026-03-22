@@ -1,4 +1,4 @@
-# ai-proxy
+# Ai-proxy
 ### This project is a lightweight AI assistant setup with a Railway free-tier backend and a simple frontend integration, allowing you to embed an AI chatbot into any webpage.
 ## Architecture Overview
 Backend: Node.js + Express, hosted on Railway (free plan)
@@ -69,9 +69,9 @@ document.getElementById("ai-send").onclick = async () => {
 </script>
 ```
 2. Make sure the <textarea> for the prompt and a <pre> element for responses exist:
-<textarea id="ai-prompt"></textarea>
-<button id="ai-send">Send</button>
-<pre id="ai-response"></pre>
+`<textarea id="ai-prompt"></textarea>`
+`<button id="ai-send">Send</button>`
+`<pre id="ai-response"></pre>`
 ## Security Measures
 - Token-based authentication (SECRET_TOKEN)
 - CORS restricted to allowed frontend domains

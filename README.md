@@ -35,7 +35,8 @@ Rate limiting: up to 20 requests per minute per IP
   "https://star.icu"
 ]
 ## Frontend Setup:
-1. Embed this script in your HTML page:
+1. Embed this script in your HTML page
+```js
 <script>
 const API_URL = "YOUR_RAILWAY_BACKEND_URL/ai";
 const API_TOKEN = "abc123"; // match SECRET_TOKEN in backend
@@ -66,6 +67,7 @@ document.getElementById("ai-send").onclick = async () => {
   }
 };
 </script>
+```
 2. Make sure the <textarea> for the prompt and a <pre> element for responses exist:
 <textarea id="ai-prompt"></textarea>
 <button id="ai-send">Send</button>

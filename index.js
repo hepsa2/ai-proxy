@@ -16,6 +16,14 @@ app.use(cors({
   ]
 }));
 app.options('*', cors());
+// ⚡ UA 防滥用（挡掉非浏览器脚本）
+app.use((req, res, next) => {
+  const ua = req.headers['user-agent'] || '';
+  if (!ua.includes("Mozilla")) {
+    return res.status(403).json({ error: "Blocked" });
+  }
+  next();
+});
 app.use(express.json());
 
 // =====================
